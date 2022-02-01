@@ -29,14 +29,14 @@ export const Bottom = styled.div`
   margin-bottom:40px;
   
 `
-export const Blue = styled.img`
-  margin-right:15px;
-  width:70px;
-  height:70px;
-  border-radius:50%;
-  border:2px solid pink;
-  object-fit:cover;
-`
+// export const Blue = styled.img`
+//   margin-right:15px;
+//   width:70px;
+//   height:70px;
+//   border-radius:50%;
+//   border:2px solid pink;
+//   object-fit:cover;
+// `
 
 
 export const Color = styled.div`

@@ -1,6 +1,8 @@
 import { Provider, Bottom, Blue, Brown, Color} from "./styles/General.styled"
 import { Search } from "@material-ui/icons"
 import "../App.css"
+import content from './content'
+import Card from './Card'
 
 export default function Sidebar() {
   return (
@@ -16,16 +18,15 @@ export default function Sidebar() {
          </div>
 
         <Bottom>
-           <Blue img src='./images/1.jpeg' alt=""/>
-           <Blue img src='./images/2.jpeg' alt=""/>
-           <Blue img src='./images/3.jpeg' alt=""/>
-           <Blue img src='./images/4.jpeg' alt=""/>
-           <Blue img src='./images/5.jpeg' alt=""/>
-           <Blue img src='./images/6.jpeg' alt=""/>
-           <Blue img src='./images/7.jpeg' alt=""/>
-           <Blue img src='./images/8.jpeg' alt=""/>
+              {content.map((item, index)=>{
+                return(
+                     <Card key={index} item={item}/>
+                )
+             })}
         </Bottom>
        
+            
+
        <div>
           <h1>
              Feeds
