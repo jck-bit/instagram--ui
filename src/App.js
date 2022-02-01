@@ -1,16 +1,25 @@
+import content from './components/content';
 import Rightbar from './components/Rightbar'
 import Sidebar from './components/Sidebar'
 import {Container} from './components/styles/container.styled'
+import { Wrapper } from './components/styles/Wrapper.style';
  
 function App() {
   return (
-    
-   <Container> 
+  <Wrapper>
+    <Container> 
 
-        <Rightbar/>
-        <Sidebar/>
+     <Rightbar/>
+     <Sidebar/>
 
     </Container> 
+  </Wrapper>
+  
+   {content.map((item, index)=>{
+     return(
+       item.span
+     )
+   })}
   );
 }
 

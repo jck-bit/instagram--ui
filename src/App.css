@@ -1,4 +1,6 @@
-
+body{
+  align-items: center;
+}
 
 
 .p-tag{
@@ -11,4 +13,26 @@
 
 .tag{
   margin-left: 15px;
+}
+
+.searchbar{
+  width: 40%;
+  height: 30px;
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  outline: none;
+}
+.searchIcon{
+  font-size: 20px ;
+  margin-left: 10px;
+}
+.searchInput{
+  border: none;
+  width: 100%;
+}
+
+.searchInput:focus{
+  outline: none;
 }
