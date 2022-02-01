@@ -1,7 +1,7 @@
 import {Logo, Right, Image, Sylvia, Second, Third, Fourth} from './styles/People.styled'
 import '../App.css'
-import { Fifth } from './styles/partwo.style';
-import { Feedback } from '@material-ui/icons';
+import { Fifth, Major,Logout,Low } from './styles/partwo.style';
+import { Explore, Feedback, Message, Search, Settings } from '@material-ui/icons';
 
 export default function Rightbar() {
   return (
@@ -25,10 +25,41 @@ export default function Rightbar() {
         <hr/>
       </Fourth>
 
-      <Fifth>
+     <Major>
+     <Fifth>
         <Feedback/>
+        <span className='tag'>Feed</span>
+      </Fifth> 
+      <Fifth>
+        <Search/>
+        <span className='tag'>Search</span>
+      </Fifth> 
+      <Fifth>
+        <Explore/>
+        <span className='tag'>Explore</span>
+      </Fifth> 
+      <Fifth>
+        <Message/>
+        <span className='tag'>Messages</span>
+      </Fifth> 
+      <Fifth>
+        <Settings/>
+        <span className='tag'>Settings</span>
       </Fifth> 
      
+     <Fifth>
+       <Low>
+        <Logout img src='./images/login.jpg'/>
+        <span className='tag'>Log out</span>
+       </Low>
+     </Fifth>
+     
+
+     </Major>
+    
+    
+                   
+   
   </Right>
   );
 }

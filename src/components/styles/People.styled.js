@@ -1,10 +1,10 @@
 import styled from 'styled-components'
 
 export const Right =styled.div`
-  flex:1;
   align-items:center;
-  background-color:blue;
+  background-color:rgb(0, 26, 51);
   padding:20px;
+  border-right:1px solid gray;
 
 `
 
