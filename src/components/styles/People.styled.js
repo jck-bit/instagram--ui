@@ -2,10 +2,8 @@ import styled from 'styled-components'
 
 export const Right =styled.div`
   align-items:center;
-  background-color:rgb(0, 26, 51);
-  padding:20px;
-  border-right:1px solid gray;
-
+  border-right:1px solid white;
+  padding-top: 30px;
 `
 
 export const Logo =styled.div`
@@ -18,6 +16,7 @@ export const Image = styled.img`
   height:50px;
   border-radius:50%;
   object-fit:cover;
+  cursor:pointer;
 ` 
 
 export const Second = styled.div`
@@ -38,5 +37,6 @@ export const Third = styled.p`
 `
 
 export const Fourth = styled.div`
-  background-color:red;
+  padding-right:0.5rem;  
 `
+

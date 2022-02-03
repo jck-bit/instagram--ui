@@ -1,14 +1,34 @@
 import styled from "styled-components";
 
 export const Provider =styled.div`
-  background-color:rgb(26, 0, 51);
-  flex:2.5;
-  padding-top:20px;
-  padding-left: 10px;
+//background-color:rgb(26, 0, 51);
+  padding-top:1.25rem;
+  padding-left: 1.125rem;
 
 ` 
 export const Topbar = styled.div`
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
 
+`
+export const Yoo = styled.div`
+   margin-right: 0.5rem;
+  
+  &:hover{
+    cursor:pointer;
+    opacity:0.9;
+    transform:scale(0.99)
+  }
+
+
+`
+
+export const TopImg = styled.img`
+  height:70px;
+  width:70px;
+  border-radius:50%;
+  object-fit:cover;
 `
 
 export const Searchbar = styled.div`
@@ -19,7 +39,6 @@ export const Searchbar = styled.div`
   outline: 0;
   background-color: #fff;
   overflow:hidden;
-
 `
 
 export const Bottom = styled.div`
@@ -28,28 +47,4 @@ export const Bottom = styled.div`
   margin-right:5px;
   margin-bottom:40px;
   
-`
-// export const Blue = styled.img`
-//   margin-right:15px;
-//   width:70px;
-//   height:70px;
-//   border-radius:50%;
-//   border:2px solid pink;
-//   object-fit:cover;
-// `
-
-
-export const Color = styled.div`
-  display:grid;
-  grid-gap:20px;
-  grid-template-columns:repeat(3, 220px);
-`
-
-
-export const Brown = styled.img`
-  border-radius:5%;
-  height:210px;
-  width:220px;
-  object-fit:cover;
-
 `

@@ -34,6 +34,11 @@ const content = [
         image: '7.jpeg',
         span:'color green'
     },
+    // {
+    //     id:7,
+    //     image: '8.jpeg',
+    //     span:'color green'
+    // },
 ]
 
 export default content;

@@ -12,8 +12,16 @@ object-fit:cover;
 
 export const Bottom = styled.div`
   margin-top:20px;
+  margin-left:15px;
   display:flex;
   margin-right:5px;
   margin-bottom:40px;
   
+
+
+  &:hover{
+    cursor:pointer;
+    opacity:0.9;
+    transform:scale(0.99)
+  }
 `

@@ -7,12 +7,12 @@ export default function Rightbar() {
   return (
   <Right>
       <Logo>
-         <Image  img src='./images/main.jpg' alt=''/>
-         <span className='spanner'>Instagram</span>
+         <Image  img src='./images/free.jpg' alt=''/>
+         <span className='spanner'>Myngram</span>
       </Logo> 
 
      <Second>
-        <Sylvia  img src='./images/me.jpeg' alt=''/>
+        <Sylvia  img src='./images/logout.png' alt=''/>
         <p> Nikita </p>
      </Second>
 

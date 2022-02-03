@@ -1,17 +1,27 @@
-import { Provider, Bottom, Blue, Brown, Color} from "./styles/General.styled"
+import { Provider, Bottom, Yoo,  Topbar, TopImg} from "./styles/General.styled"
+import { Color } from "./styles/Stories.style"
 import { Search } from "@material-ui/icons"
-import "../App.css"
 import content from './content'
 import Card from './Card'
+import feeds from '../Feed'
+import Stories from "./Stories"
+
 
 export default function Sidebar() {
   return (
 
      <Provider>
+      <Topbar>
        <div className="searchbar">
-         <Search  className='searchIcon'/>
+          <Search  className='searchIcon'/>
          <input placeholder="search friends" className="searchInput" />
         </div>
+        <Yoo>
+          <TopImg img src="./images/logout.png" alt=""/>
+        </Yoo>
+     
+      </Topbar>
+       
         
          <div>
             <h1>stories</h1>
@@ -24,21 +34,17 @@ export default function Sidebar() {
                 )
              })}
         </Bottom>
-       
-            
-
        <div>
           <h1>
              Feeds
           </h1>
        </div>
        <Color>
-       <Brown img src="./images/15.jpeg"/>
-       <Brown img src="./images/14.jpeg"/>
-       <Brown img src="./images/11.jpeg"/>
-       <Brown img src="./images/me.jpeg"/>
-       <Brown img src="./images/13.jpeg"/>
-       <Brown img src="./images/16.jpeg"/>
+         {feeds.map((item, index) =>{
+            return(
+              <Stories key={index} item={item}/>
+            )
+         })}
        </Color>
    
      </Provider>

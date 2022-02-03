@@ -11,6 +11,14 @@ export const Fifth = styled.div`
  margin:20px 10px;
  align-items:center;
  display:flex;
+ 
+
+
+ &:hover{
+  cursor:pointer;
+  opacity:0.9;
+  transform:scale(0.99)
+}
 `
 
 
