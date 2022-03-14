@@ -7,8 +7,8 @@ function App() {
 
     <Container> 
 
-      <Rightbar/>
-      <Sidebar/>
+       <Rightbar/>
+       <Sidebar/>
 
     </Container> 
   

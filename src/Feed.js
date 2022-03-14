@@ -4,6 +4,7 @@ const feeds = [
         body:'the nature',
         image:'16.jpeg'
     },
+    
     {
         id:2,
         body:'Memorize...',

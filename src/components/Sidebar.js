@@ -1,3 +1,4 @@
+import React from "react"
 import { Provider, Bottom, Yoo,  Topbar, TopImg} from "./styles/General.styled"
 import { Color } from "./styles/Stories.style"
 import { Search } from "@material-ui/icons"
@@ -7,17 +8,20 @@ import feeds from '../Feed'
 import Stories from "./Stories"
 
 
+
+
 export default function Sidebar() {
+   
   return (
 
      <Provider>
       <Topbar>
        <div className="searchbar">
           <Search  className='searchIcon'/>
-         <input placeholder="search friends" className="searchInput" />
+          <input placeholder="search friends" className="searchInput"/>
         </div>
         <Yoo>
-          <TopImg img src="./images/logout.png" alt=""/>
+           <TopImg img src="./images/logout.png" alt=""/>
         </Yoo>
      
       </Topbar>
@@ -26,7 +30,6 @@ export default function Sidebar() {
          <div>
             <h1>stories</h1>
          </div>
-
         <Bottom>
               {content.map((item, index)=>{
                 return(

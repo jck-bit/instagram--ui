@@ -17,7 +17,7 @@ const content = [
     {
         id:4,
         image: '4.jpeg',
-        span:'Google'
+        span:'Google'   
     },
     {
         id:5,

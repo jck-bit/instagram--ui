@@ -45,6 +45,5 @@ export const Bottom = styled.div`
   margin-top:20px;
   display:flex;
   margin-right:5px;
-  margin-bottom:40px;
-  
+  margin-bottom:40px;  
 `

@@ -1,4 +1,4 @@
-import {Logo, Right, Image, Sylvia, Second, Third, Fourth} from './styles/People.styled'
+import {Logo, Right, Image, Sylvia, Second, Third, Fourth, Button} from './styles/People.styled'
 import '../App.css'
 import { Fifth, Major,Logout,Low } from './styles/partwo.style';
 import { Explore, Feedback, Message, Search, Settings } from '@material-ui/icons';
@@ -20,7 +20,7 @@ export default function Rightbar() {
        <p className='p-tag'>54k Followers</p>
        <p>217 Following</p>
       </Third>
-     
+      
       <Fourth>
         <hr/>
       </Fourth>
@@ -31,17 +31,20 @@ export default function Rightbar() {
         <span className='tag'>Feed</span>
       </Fifth> 
       <Fifth>
-        <Search/>
-        <span className='tag'>Search</span>
+       
+         <Search/>
+          <span className='tag'>Search</span>
+  
+        
       </Fifth> 
       <Fifth>
         <Explore/>
         <span className='tag'>Explore</span>
       </Fifth> 
-      <Fifth>
+      <Button>
         <Message/>
         <span className='tag'>Messages</span>
-      </Fifth> 
+      </Button>
       <Fifth>
         <Settings/>
         <span className='tag'>Settings</span>
@@ -54,12 +57,8 @@ export default function Rightbar() {
        </Low>
      </Fifth>
      
-
      </Major>
-    
-    
-                   
-   
-  </Right>
+              
+   </Right>
   );
 }
